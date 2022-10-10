@@ -8,7 +8,7 @@ async function buscaEndereco(cep) {
         }
         console.log(consultaCepCovertida);
         } catch (erro) {
-                
+                console.log(erro)
         }
 
 }
