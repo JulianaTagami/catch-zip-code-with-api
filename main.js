@@ -12,3 +12,5 @@ async function buscaEndereco(cep) {
         }
 
 }
+
+let ceps = []
