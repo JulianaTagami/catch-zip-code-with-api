@@ -1,3 +1,14 @@
 async function buscaEndereco(cep) {
-        var consultaCEP = await fetch(`https://viacep.com.br/wa${cep}/json/`);
+        try {
+        var consultaCep = await fetch(`https://viacep.com.br/wa${cep}/json/`);
+        var consultaCepCovertida = await consultaCep.json();
+
+        if (consultaCepCovertida.erro) {
+            throw Error('CEP não existe');
+        }
+        console.log(consultaCepCovertida);
+        } catch (erro) {
+                
+        }
+
 }
