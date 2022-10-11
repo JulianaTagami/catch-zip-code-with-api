@@ -13,4 +13,4 @@ async function buscaEndereco(cep) {
 
 }
 
-let ceps = []
+let ceps = ['001001000'];
