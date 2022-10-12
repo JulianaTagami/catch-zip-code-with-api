@@ -15,3 +15,5 @@ async function buscaEndereco(cep) {
 
 let ceps = ['001001000', '01001001'];
 let conjutoCeps = ceps.map(valores => buscaEndereco(valores));
+
+Promise.all 
